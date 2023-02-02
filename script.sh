@@ -4,8 +4,9 @@ cd fol_1
 touch 1_1.txt 1_2.txt 1_3.txt
 cd ../fol_2
 touch 2_1.txt 2_2.txt 2_3.txt
-touch .gitignore
-//vim .gitignore
-//fol_1
-//fol_2
-//:wq
+
+git config --global core.excludesfile~/.gitignore_global
+
+git add .
+git commit -a
+git push -u origin main
